@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    #main>button{
+        margin:10px;
+    }
+  #container{
+        text-align: center;
+
+    }
+    #box{
+        width: 200px;
+        height: 80px;
+       border-radius: 3px;
+        display: flex;
+        padding: 5px;
+        margin: auto;
+        border: 2px solid black;
+    }
+    #member1,#member2,#member3{
+            margin:1px;
+            text-align: center;
+            width: 70px;
+            height: 70px;
+            border: 2px solid rgb(10, 10, 10);
+
+            font-size: larger;
+            }
+            #winnername{
+            width: 200px;
+            height: 50px;
+            
+            font-size: 25px;
+            text-align: center;
+            margin: auto;
+            border:2px solid black;
+            font-weight: bold;
+            
+        }
+</style>
+<body>
+    <div id="main">
+  <h1 id="container">Throw Dice</h1>
+  <div id="winnername">Winner Name</div>
+  <div id="box">
+    <div id="member1" class="dice">0</div>
+    <div id="member2" class="dice">0</div>
+    <div id="member3" class="dice">0</div>
+   
+  </div>
+  <button onclick="fun()">ROLL THE DICE</button>
+  </div>
+</body>
+</html>
+<script src="dice.js"></script>
